@@ -1,9 +1,5 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Sample App</title>
-  </head>
-  <body>
+@extends('layouts.default')
+@section('title','shouye')
+@section('content')
     <h1>首页</h1>
-  </body>
-</html>
+@stop
