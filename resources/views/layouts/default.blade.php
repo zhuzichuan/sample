@@ -6,23 +6,12 @@
   </head>
   <body>
       @include('layouts._header')
-      <header class="navbar navbar-fixed-top navbar-inverse">
-          <div class="container">
-              <div class="col-md-offset-1 col-md-10">
-              <a href="/" id="logo">sample app</a>
-              <nav>
-                  <ul class="nav navbar-nav navbar-right">
-                      <li><a href="{{ route('help') }}">帮助</a></li>
-                      <li><a href="#">登录</a></li>
-                  </ul>
-              </nav>
-              </div>
-          </div>
-      </header>
       <div class="container">
+         <div class="col-md-offset-1 col-md-10">
+              @include('shared._messages')
               @yield('content')
               @include('layouts._footer')
+         </div>
       </div>
-
   </body>
 </html>
